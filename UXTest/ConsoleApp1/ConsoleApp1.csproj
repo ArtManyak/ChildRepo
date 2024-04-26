@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\..\SharedFiles\very\long\path\to\shared\file\to\make\it\hard\to\find\it\in\files\view\because\the\tree\will\be\very\deep\SharedFile1.cs">
+            <Link>SharedFile1.cs</Link>
+        </Compile>
+        <Compile Include="..\..\SharedFiles\very\long\path\to\shared\file\to\make\it\easier\to\find\it\in\solution\view\SharedFile2.cs">
+            <Link>SharedFile2.cs</Link>
+        </Compile>
+        <Compile Include="..\..\SharedFiles\short\path\to\shared\files\SharedFile3.cs">
+            <Link>SharedFile3.cs</Link>
+        </Compile>
+        <Compile Include="..\..\SharedFiles\another\very\long\path\to\shared\file\to\make\it\hard\to\find\it\in\files\view\because\the\tree\will\be\very\deep\SharedFile4.cs">
+            <Link>SharedFile4.cs</Link>
+        </Compile>
+        <Compile Include="..\..\SharedFiles\another\very\long\path\to\shared\file\to\make\it\easier\to\find\it\in\solution\view\SharedFile5.cs">
+            <Link>SharedFile5.cs</Link>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ConsoleApp2\ConsoleApp2.csproj"/>
+    </ItemGroup>
+
+</Project>
